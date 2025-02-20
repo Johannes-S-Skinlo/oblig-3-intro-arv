@@ -1,4 +1,4 @@
-package oblig3.replace;
+package edu.ntnu.idatx2003.replace;
 
 public class ReplaceFirstTextCommand extends ReplaceTextCommand {
     

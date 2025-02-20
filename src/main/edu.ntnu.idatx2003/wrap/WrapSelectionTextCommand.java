@@ -1,4 +1,4 @@
-package oblig3.wrap;
+package edu.ntnu.idatx2003.wrap;
 
 public class WrapSelectionTextCommand extends WrapTextCommand{
 

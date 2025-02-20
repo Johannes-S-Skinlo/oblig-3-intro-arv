@@ -1,4 +1,4 @@
-package oblig3.capitalize;
+package edu.ntnu.idatx2003.capitalize;
 
 public class CapitalizeWordsTextCommand extends CapitalizeTextCommand {
 

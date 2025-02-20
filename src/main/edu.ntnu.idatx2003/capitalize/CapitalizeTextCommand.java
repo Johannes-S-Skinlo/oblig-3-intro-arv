@@ -1,5 +1,5 @@
-package oblig3.capitalize;
-import oblig3.TextCommand;
+package edu.ntnu.idatx2003.capitalize;
+import edu.ntnu.idatx2003.TextCommand;
 
 public class CapitalizeTextCommand implements TextCommand {
 
