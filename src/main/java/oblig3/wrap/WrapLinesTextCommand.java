@@ -1,4 +1,4 @@
-package edu.ntnu.idatx2003.wrap;
+package oblig3.wrap;
 
 /**
  * The WrapLinesTextCommand class is responsible for wrapping text with specified opening and ending strings.

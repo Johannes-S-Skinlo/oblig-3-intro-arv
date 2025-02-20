@@ -1,4 +1,4 @@
-package edu.ntnu.idatx2003.capitalize;
+package oblig3.capitalize;
 
 public class CapitalizeSelectionTextCommand extends CapitalizeTextCommand {
     private String selection = "";

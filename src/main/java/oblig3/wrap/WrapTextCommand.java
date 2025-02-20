@@ -1,5 +1,5 @@
-package edu.ntnu.idatx2003.wrap;
-import edu.ntnu.idatx2003.TextCommand;
+package oblig3.wrap;
+import oblig3.TextCommand;
 
 /**
  * Abstract class representing a command that wraps text with specified opening and ending strings.
