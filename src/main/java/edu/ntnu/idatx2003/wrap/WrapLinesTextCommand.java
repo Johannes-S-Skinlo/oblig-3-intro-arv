@@ -26,7 +26,16 @@ public class WrapLinesTextCommand extends WrapTextCommand{
      */
     @Override
     public String execute(String text) {
-        text = text.replace("\n", end + "\n" + opening);
+        if (text.isEmpty()) {
+            return text;
+        }
+        else if (text.contains("\n")) {
+            for (int i = 0; i < text.length(); i++) {
+                if (text.charAt(i) == '\n'&& text.substring(i + 1) != null) {
+                    text = text.substring(0, i) + end + "\n" + opening + text.substring(i + 1);
+                }
+            }
+        }
         return opening + text + end;
     }
 
