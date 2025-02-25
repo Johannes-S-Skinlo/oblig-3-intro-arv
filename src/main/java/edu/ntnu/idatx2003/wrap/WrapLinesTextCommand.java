@@ -29,9 +29,9 @@ public class WrapLinesTextCommand extends WrapTextCommand{
         String wrappedLines = "";
         String[] lines = text.split("\n");
         for (String line : lines) {
-            if (!line.isEmpty()) {
-                String wrappedLine = opening + line + end;
-                wrappedLines = wrappedLines + "\n" + wrappedLine;
+            if (!line.equals("\n")){
+                String wrappedLine = super.execute(line);
+                wrappedLines = wrappedLines + wrappedLine + "\n";
             }
         }
         return wrappedLines;
