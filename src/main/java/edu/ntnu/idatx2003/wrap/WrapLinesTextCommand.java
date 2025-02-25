@@ -31,7 +31,7 @@ public class WrapLinesTextCommand extends WrapTextCommand{
         }
         else if (text.contains("\n")) {
             for (int i = 0; i < text.length(); i++) {
-                if (text.charAt(i) != '\n') {
+                if (!text.substring(i + 1).isEmpty()) {
                     text = text.substring(0, i) + end + "\n" + opening + text.substring(i + 1);
                 }
             }
