@@ -31,10 +31,10 @@ public class WrapTextCommand implements TextCommand {
      */
     @Override
     public String execute(String text) {
-        if (!text.isEmpty()) {
-            return opening + text + end;
+        if (text.isEmpty()) {
+            return text;
         }
-        return text;
+        return opening + text + end;
     }
 
     /**
