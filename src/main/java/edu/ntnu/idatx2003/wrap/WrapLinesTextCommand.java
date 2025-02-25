@@ -29,7 +29,10 @@ public class WrapLinesTextCommand extends WrapTextCommand{
         if (text.isEmpty()){
             return text;
         }
-        else if (text.contains("\n")) {
+        else if (!text.contains("\n")) {
+            return opening + text + end;
+            }
+        else {
             for (int i = 0; i < text.length(); i++) {
                 if (!text.substring(i + 1).isEmpty()) {
                     text = text.substring(0, i) + end + "\n" + opening + text.substring(i + 1);
@@ -37,6 +40,6 @@ public class WrapLinesTextCommand extends WrapTextCommand{
             }
             return text;
         }
-        return opening + text + end;
+
     }
 }
