@@ -1,6 +1,9 @@
 package edu.ntnu.idatx2003.replace;
 import edu.ntnu.idatx2003.TextCommand;
 
+/**
+ * The ReplaceTextCommand class provides a method for replacing a target string with a replacement string in a given text.
+ */
 public class ReplaceTextCommand implements TextCommand {
     
     protected  String target = "";
