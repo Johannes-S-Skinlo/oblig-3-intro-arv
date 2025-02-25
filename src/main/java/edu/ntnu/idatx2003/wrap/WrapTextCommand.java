@@ -4,7 +4,7 @@ import edu.ntnu.idatx2003.TextCommand;
 /**
  * Abstract class representing a command that wraps text with specified opening and ending strings.
  */
-public abstract class WrapTextCommand implements TextCommand {
+public class WrapTextCommand implements TextCommand {
 
     /**
      * The opening and ending strings to wrap the text with.
@@ -30,7 +30,9 @@ public abstract class WrapTextCommand implements TextCommand {
      * @return the wrapped text
      */
     @Override
-    public abstract String execute(String text);
+    public String execute(String text){
+        return opening + text + end;
+    }
 
     /**
      * @return the opening string
