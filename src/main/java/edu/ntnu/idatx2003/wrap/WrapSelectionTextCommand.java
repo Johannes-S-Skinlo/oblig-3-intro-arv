@@ -13,7 +13,7 @@ public class WrapSelectionTextCommand extends WrapTextCommand{
 
     @Override
     public String execute(String text) {
-        return opening + selection + end;
+        return text.replace(selection, opening + selection + end);
     }
 
     public String getSelection () {
