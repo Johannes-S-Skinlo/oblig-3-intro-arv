@@ -26,15 +26,14 @@ public class WrapLinesTextCommand extends WrapTextCommand{
      */
     @Override
     public String execute(String text) {
-        if (text.isEmpty()){
-            return text;
-        }
-        else {
-            for (int i = 0; i < text.length(); i++) {
-                text = text.substring(0, i) + end + "\n" + opening + text.substring(i + 1);
+        String wrappedLines = "";
+        String[] lines = text.split("\n");
+        for (String line : lines) {
+            if (!line.isEmpty()) {
+                String wrappedLine = opening + line + end;
+                wrappedLines = wrappedLines + "\n" + wrappedLine;
             }
-            return opening + text + end;
         }
-
+        return wrappedLines;
     }
 }
