@@ -30,8 +30,11 @@ public class WrapTextCommand implements TextCommand {
      * @return the wrapped text
      */
     @Override
-    public String execute(String text){
-        return opening + text + end;
+    public String execute(String text) {
+        if (!text.isEmpty()) {
+            return opening + text + end;
+        }
+        return text;
     }
 
     /**
