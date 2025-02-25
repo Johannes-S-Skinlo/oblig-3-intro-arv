@@ -31,9 +31,10 @@ public class WrapLinesTextCommand extends WrapTextCommand{
         for (String line : lines) {
             if (!line.equals("\n")){
                 String wrappedLine = super.execute(line);
-                wrappedLines = wrappedLines + wrappedLine + "\n";
+                wrappedLines = wrappedLines + "\n" + wrappedLine;
             }
         }
+        wrappedLines = wrappedLines.replaceFirst("\n", "");
         return wrappedLines;
     }
 }
