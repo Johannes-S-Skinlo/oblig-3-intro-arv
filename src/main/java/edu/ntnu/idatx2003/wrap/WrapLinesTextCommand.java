@@ -35,6 +35,7 @@ public class WrapLinesTextCommand extends WrapTextCommand{
                     text = text.substring(0, i) + end + "\n" + opening + text.substring(i + 1);
                 }
             }
+            return text;
         }
         return opening + text + end;
     }
