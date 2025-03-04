@@ -11,9 +11,8 @@ public class Script {
 
     public String excecute(String text) {
         for (TextCommand textcommand : textCommands) {
-            text = text + "\n" + textcommand.execute(text);
+            text = textcommand.execute(text);
         }
-        text = text.replaceFirst("\n", "");
         return text;
     }
 }

@@ -9,8 +9,8 @@ public class WrapTextCommand implements TextCommand {
     /**
      * The opening and ending strings to wrap the text with.
      */
-    public String opening;
-    public String end;
+    protected String opening;
+    protected String end;
 
     /**
      * Constructs a WrapTextCommand with the specified opening and ending strings.
