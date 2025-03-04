@@ -10,8 +10,8 @@ public class Script {
     }
 
     public String excecute(String text) {
-        for (TextCommand command : textCommands) {
-            text = text + "\n" + command.execute(text);
+        for (TextCommand textcommand : textCommands) {
+            text = text + "\n" + textcommand.execute(text);
         }
         text = text.replaceFirst("\n", "");
         return text;
