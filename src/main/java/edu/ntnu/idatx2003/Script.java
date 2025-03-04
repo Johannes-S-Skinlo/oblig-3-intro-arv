@@ -1,8 +1,6 @@
-package edu.ntnu.idatx2003.wrap;
+package edu.ntnu.idatx2003;
 
 import java.util.List;
-
-import edu.ntnu.idatx2003.TextCommand;
 
 public class Script {
     private List<TextCommand> textCommands;
@@ -13,8 +11,9 @@ public class Script {
 
     public String excecute(String text) {
         for (TextCommand command : textCommands) {
-            text = text + command.execute(text);
+            text = text + "\n" + command.execute(text);
         }
+        text = text.replaceFirst("\n", "");
         return text;
     }
 }
