@@ -9,7 +9,7 @@ public class Script {
         this.textCommands = textCommands;
     }
 
-    public String excecute(String text) {
+    public String execute(String text) {
         for (TextCommand textcommand : textCommands) {
             text = textcommand.execute(text);
         }
